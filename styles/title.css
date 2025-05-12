@@ -1,0 +1,17 @@
+.title {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+
+    & img {
+        width: 3.5rem;
+    }
+
+    & h1 {
+        font: var(--title);
+        color: --content-primary;
+    }
+}
