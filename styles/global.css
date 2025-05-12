@@ -33,4 +33,7 @@
 
 body {
     background-color: var(--background-primary);
+
+    max-width: 80rem;
+    margin: auto;
 }
