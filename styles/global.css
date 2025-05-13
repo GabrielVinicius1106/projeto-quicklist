@@ -34,12 +34,13 @@
 body {
     background-color: var(--background-primary);
     
-    max-width: 80rem;
+    max-width: 22.5rem;
     margin: auto;
 }
 
 @media (width >= 80em){
     body {
+        max-width: 80rem;
         margin-inline: 20%;
     }
 }
