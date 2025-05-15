@@ -1,7 +1,14 @@
-const checkboxes = document.querySelectorAll('.checkbox');
+const body = document.querySelector('body')
 
-for (let i = 0; i < checkboxes.length; i++) {
-    checkboxes[i].addEventListener("click", (event) => {
-        checkboxes[i].classList.toggle("checked");
-    })
-}
+body.addEventListener("click", (event) => {
+    
+    // Pega o elemento mais próximo que tenha a classe 'checkbox'
+    let checkbox = event.target.closest('.checkbox')
+
+    if(checkbox) {
+        // Se o elemento mais próximo for um checkbox, adiciona a classe 'checked'
+        checkbox.classList.toggle('checked')
+    }
+    
+
+})
