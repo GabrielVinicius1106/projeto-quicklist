@@ -39,6 +39,7 @@
         border-color: var(--border-hover);
     }
 }
+
 .checkbox {
     height: 1.25rem;
 
@@ -62,23 +63,12 @@
         }
     }
 
-    /* &:has(:checked) {
+}
+
+.checked {
+    & label {
         & .check {
             background-image: url(../assets/icons/checkbox-checked.svg);
         }
-
-        &:hover {
-            & .check {
-                background-image: url(../assets/icons/checkbox-checked.svg);
-            }
-        }
-
-    } */
-
-    &:hover {
-        & .check {
-            background-image: url(../assets/icons/checkbox-hover.svg);
-        }
     }
 }
-    
