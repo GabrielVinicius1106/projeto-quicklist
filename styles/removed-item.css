@@ -1,0 +1,20 @@
+.removed-item {
+    /* Quando exluir item, tornar display 'flex' */
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.75rem;
+    border-radius: .75rem;
+    padding: .75rem;
+    font: var(--label);
+
+    color: var(--always-white);
+    background-color: var(--color-danger);
+
+    & div {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+    }
+}
