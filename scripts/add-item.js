@@ -11,10 +11,14 @@ addItemButton.addEventListener("click", () => {
     newItemInput.value = ""
 
     // Verifica se o input está vazio
-    if(inputValue == "") {
+    if (inputValue == "" || inputValue == null) {
+        alert("O item não pode ser vazio!")
         return 0;
     }
-
+    if (REGEX.test(inputValue) == true) {
+        alert("O item não pode conter números!")
+        return 0;
+    }
 
     // Criar a div de item
     const newItem = document.createElement("div")
