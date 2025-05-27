@@ -1,12 +1,15 @@
 .removed-item {
-    /* Quando exluir item, tornar display 'flex' */
     display: none;
     align-items: center;
     justify-content: space-between;
     height: 2.75rem;
+    width: 100%;
     border-radius: .75rem;
     padding: .75rem;
     font: var(--label);
+
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
 
     color: var(--always-white);
     background-color: var(--color-danger);
@@ -16,5 +19,11 @@
         align-items: center;
         gap: .75rem;
 
+    }
+
+    & #close {
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

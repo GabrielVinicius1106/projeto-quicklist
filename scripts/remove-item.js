@@ -8,6 +8,8 @@ bodyRemove.addEventListener("click", (event) => {
     for(let i = 0; i < removeItens.length; i++) {
         removeItens[i].addEventListener("click", () => {
             itens[i].style.display = "none"
+            const warning = document.querySelector(".removed-item") 
+            warning.style.display = "flex" 
         });
     }
 

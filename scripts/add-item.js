@@ -15,10 +15,6 @@ addItemButton.addEventListener("click", () => {
         alert("O item não pode ser vazio!")
         return 0;
     }
-    if (REGEX.test(inputValue) == true) {
-        alert("O item não pode conter números!")
-        return 0;
-    }
 
     // Criar a div de item
     const newItem = document.createElement("div")
